@@ -1,6 +1,9 @@
 <div class='container px-5 px-sm-0'>
   <div class='row'>
     <div class='col-md-3'>
+      <div>
+  　　　<%= flash[:notice] %>
+　　　</div>
       <%= render 'books/user_info', user: @user %>
       <%= render 'books/new_book', book: @book %>
     </div>
