@@ -6,6 +6,10 @@ class ApplicationController < ActionController::Base
     user_path(current_user) # ログインした直後は、ユーザーの詳細ページに遷移
   end
   # 追加ここまで
+  def after_sign_out_path_for(resource)
+    root_path  # 例: トップページにリダイレクト
+  end
+  
   protected
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:email])

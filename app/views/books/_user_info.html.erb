@@ -1,0 +1,19 @@
+	    <h2>User info</h2>
+	    <!-- モックのため、固定値や未実装になっている部分があります。アプリ完成前に修正しましょう。 -->
+	    <table class='table'>
+	      <tr>
+	        <td><%= image_tag(user.profile_image.present? ? user.profile_image : 'default-image.jpg', size: "150x150") %></td>
+	      </tr>
+	      <tr>
+	        <th>name</th>
+	        <td><%= user.name %></td>  <!-- 固定値になっているので変数を使いましょう -->
+	      </tr>
+	      <tr>
+	        <th>introduction</th>
+	        <td><%= user.introduction %></t>  <!-- 固定値になっているので変数を使いましょう -->
+	      </tr>
+	    </table>
+	    <div class='row'>
+	      <!-- 編集リンクが未実装 -->
+	      <%= link_to 'Edit', edit_user_path(user), class: 'btn btn-primary btn-sm' %>
+	    </div>

@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def index  
-   @users = User.all
-   
+    @user = current_user # または特定のユーザーを取得する
+    @users = User.all
   end
   
   def show
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
   private
   
   def user_params
-    params.require(:user).permit(:name, :introduction)
+    params.require(:user).permit(:name, :profile_image, :introduction)
   end
 end
     
