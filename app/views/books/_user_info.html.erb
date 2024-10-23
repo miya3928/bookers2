@@ -10,10 +10,9 @@
 	      </tr>
 	      <tr>
 	        <th>introduction</th>
-	        <td><%= user.introduction %></t>  <!-- 固定値になっているので変数を使いましょう -->
+	        <td><%= user.introduction %></td>  <!-- 固定値になっているので変数を使いましょう -->
 	      </tr>
 	    </table>
-	    <div class='row'>
-	      <!-- 編集リンクが未実装 -->
-	      <%= link_to 'Edit', edit_user_path(user), class: 'btn btn-primary btn-sm' %>
-	    </div>
+	      <div class='edit-user row'>
+         <%= link_to raw("<i class='fa-solid fa-user-gear'></i>"), edit_user_path(user), class: 'btn btn-primary btn-sm' %>
+	      </div>

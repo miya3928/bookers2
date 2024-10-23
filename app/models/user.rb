@@ -5,9 +5,14 @@ class User < ApplicationRecord
   
   has_many :books, dependent: :destroy
   has_one_attached :profile_image
-  
-  validates :name, presence: true, length: { minimum: 2, maximum: 20 }, uniqueness: true
-  validates :introduction, presence: true, length: { maximum: 50 }
+ with_options on: :create do  
+  validates :email, uniqueness: true
+  validates :password, length: { minimum: 6 }
+  validates :name, length: { minimum: 2, maximum: 20 }, uniqueness: true
+end
+
+  validates :name, length: { minimum: 2, maximum: 20 }, uniqueness: true
+  validates :introduction, length: { maximum: 50 }
 
   def get_profile_image(width: 100, height: 100)
     # デフォルト画像が未添付の場合、ファイルパスを指定して添付
