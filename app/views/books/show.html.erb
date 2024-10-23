@@ -22,8 +22,10 @@
           <td><%= link_to @book.title, book_path(@book)  %></td>
           <td><%= @book.body %></td>
           <td>
-          <%= link_to 'Edit', edit_book_path(@book), class: 'btn btn-primary btn-sm' %>
-          <%= link_to 'Destroy', book_path(@book), method: :delete, class: 'btn btn-danger btn-sm', data: { confirm: 'Are you sure you want to delete this book?' } %>
+          <% if @user == current_user %>
+            <%= link_to 'Edit', edit_book_path(@book), class: 'btn btn-primary btn-sm' %>
+            <%= link_to 'Destroy', book_path(@book), method: :delete, class: 'btn btn-danger btn-sm', data: { confirm: 'Are you sure you want to delete this book?' } %>
+          <% end %>
           </td>
         </tr>
       </table>
