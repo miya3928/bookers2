@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :create_users
   devise_for :users
   
   # ルートの設定

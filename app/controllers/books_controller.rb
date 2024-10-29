@@ -20,10 +20,6 @@ class BooksController < ApplicationController
   end
 
   def index
-    # `current_user` のみの本を表示する場合
-    # @books = current_user.books
-
-    # 全ての本を表示する場合
     @books = Book.all
     @users = User.all
     @book = Book.new
