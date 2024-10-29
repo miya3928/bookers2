@@ -1,0 +1,54 @@
+[33mcommit c3f78f94dea2e98db5bb17b0ff84f1ce5422885d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: fb63085 a719aeb
+Author: TatsuyaMiyagawa <181440097+miya3928@users.noreply.github.com>
+Date:   Tue Oct 29 01:47:11 2024 +0000
+
+    [merge]マイグレーション
+
+[33mcommit fb630855e666d4d3804bf71b2a26a3ef2a27b68e[m
+Author: TatsuyaMiyagawa <181440097+miya3928@users.noreply.github.com>
+Date:   Tue Oct 29 00:01:47 2024 +0000
+
+    [Fix]マイグレーションファイルの修正
+
+[33mcommit a719aeb9efd980edd760c18ce97aa8e5e5abf746[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: TatsuyaMiyagawa <181440097+miya3928@users.noreply.github.com>
+Date:   Thu Oct 24 00:55:41 2024 +0000
+
+    [fix]マイグレーションエラー
+
+[33mcommit 2805cb6c20cf826f933cd9095741a226b7f4050d[m
+Author: TatsuyaMiyagawa <181440097+miya3928@users.noreply.github.com>
+Date:   Wed Oct 23 06:09:31 2024 +0000
+
+    [finish]test
+
+[33mcommit c57ad30b0a917a8e8b0e08f118df914e22c66a1a[m
+Author: TatsuyaMiyagawa <181440097+miya3928@users.noreply.github.com>
+Date:   Wed Oct 23 01:19:16 2024 +0000
+
+    [finish]varidates
+
+[33mcommit de46c8ac040e7f7cb88c82c939cde65d6b1d9d1a[m
+Author: TatsuyaMiyagawa <181440097+miya3928@users.noreply.github.com>
+Date:   Tue Oct 22 15:18:16 2024 +0000
+
+    [finish]flash message
+
+[33mcommit be1cb77313983d995440d61693cb78ac65078a0a[m
+Author: TatsuyaMiyagawa <181440097+miya3928@users.noreply.github.com>
+Date:   Tue Oct 22 14:06:37 2024 +0000
+
+    users.3error
+
+[33mcommit 9cc44c80ac8d5593ee5646b474be238e307c97c8[m
+Author: TatsuyaMiyagawa <181440097+miya3928@users.noreply.github.com>
+Date:   Mon Oct 21 09:07:20 2024 +0000
+
+    [user]
+
+[33mcommit cb12795ca0dd3cd1cb41fc52746b159e105075bb[m
+Author: TatsuyaMiyagawa <181440097+miya3928@users.noreply.github.com>
+Date:   Fri Oct 18 05:40:49 2024 +0000
+
+    [start]bookers2
